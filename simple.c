@@ -12,4 +12,7 @@
 
 #include "push_swap.h"
 
-void	simple_sort(t_list **a, t_list **b, t_config *config);
+void	simple_sort(t_list **a, t_list **b, t_config *config)
+{
+	
+}

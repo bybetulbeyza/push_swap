@@ -56,11 +56,11 @@ typedef struct s_config
 	t_stats	stats;
 }	t_config;
 
-int	parse_input(int argc, char **argv, t_list **a, t_config *config);
-int	parse_flag(char *arg, t_config *config);
-int	is_number(char *str);
-int	parse_int(char *str, int *value);
-int	has_duplicate(t_list *a, int value);
+int		parse_input(int argc, char **argv, t_list **a, t_config *config);
+int		parse_flag(char *arg, t_config *config);
+int		is_number(char *str);
+int		parse_int(char *str, int *value);
+int		has_duplicate(t_list *a, int value);
 
 t_list	*new_node(int value);
 void	add_back(t_list **stack, t_list *new);
