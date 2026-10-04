@@ -6,7 +6,7 @@
 /*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 14:14:31 by zeyalcin          #+#    #+#             */
-/*   Updated: 2026/09/25 16:37:24 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/26 12:50:02 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	is_number(char *str)
 	return (1);
 }
 
-int	parse_int(char *str, int *value)
+int	put_nbr(char *str, int *value)
 {
 	long	result;
 	int		sign;
@@ -56,13 +56,13 @@ int	parse_int(char *str, int *value)
 	return (1);
 }
 
-int	has_duplicate(t_list *stack, int value)
+int	has_duplicate(t_list *a, int value)
 {
-	while (stack)
+	while (a)
 	{
-		if (stack->value == value)
+		if (a->value == value)
 			return (1);
-		stack = stack->next;
+		a = a->next;
 	}
 	return (0);
 }

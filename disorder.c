@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   disorder.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zeyalcin@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 10:41:34 by zeyalcin          #+#    #+#             */
-/*   Updated: 2026/09/25 16:11:58 by zeyalcin         ###   ########.fr       */
+/*   Updated: 2026/09/27 12:57:12 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 double	compute_disorder(t_list *stack)
 {
-	double	 mistakes;
+	double	mistakes;
 	double	total_pairs;
 	t_list	*i;
 	t_list	*j;

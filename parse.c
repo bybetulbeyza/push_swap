@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: zeyalcin@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 14:04:38 by zeyalcin          #+#    #+#             */
-/*   Updated: 2026/09/25 17:04:22 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/27 14:09:14 by zeyalcin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	process_number(char *arg, t_list **a)
 	int		value;
 	t_list	*new;
 
-	if (!is_number(arg) || !parse_int(arg, &value))
+	if (!is_number(arg) || !put_nbr(arg, &value))
 		return (0);
 	if (has_duplicate(*a, value))
 		return (0);
@@ -47,5 +47,7 @@ int	parse_input(int argc, char **argv, t_list **a, t_config *config)
 		}
 		i++;
 	}
+	if (!*a)
+		return (0);
 	return (1);
 }

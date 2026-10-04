@@ -3,9 +3,9 @@ NAME = push_swap
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = main.c parse.c parse_flags.c parse_numbers.c error.c \
+SRCS = main.c parse.c parse_flags.c parse_numbers.c \
 	stack.c stack_utils.c swap.c push.c rotate.c reverse_rotate.c \
-	index.c disorder.c simple.c medium.c radix.c adaptive.c benchmark.c sort.c
+	index.c disorder.c simple.c medium.c radix.c adaptive.c benchmark.c
 
 OBJS = $(SRCS:.c=.o)
 

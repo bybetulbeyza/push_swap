@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: zeyalcin@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 15:02:10 by betdemir          #+#    #+#             */
-/*   Updated: 2026/09/25 17:46:14 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/27 11:42:29 by zeyalcin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int	main(int argc, char **argv)
 		free_stack(&a);
 		return (1);
 	}
+	config.disorder = compute_disorder(a);
 	execute_sort(&a, &b, &config);
 	if (config.bench)
 		print_benchmark(&config);

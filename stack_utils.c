@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zeyalcin@student.42istanbul.com.tr         +#+  +:+       +#+        */
+/*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 12:02:06 by zeyalcin          #+#    #+#             */
-/*   Updated: 2026/09/25 12:22:06 by zeyalcin         ###   ########.fr       */
+/*   Updated: 2026/09/27 13:18:52 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ int	is_sorted(t_list *stack)
 
 int	find_min(t_list *stack)
 {
-	int min;
+	int	min;
 
 	min = stack->value;
-	while(stack)
+	while (stack)
 	{
-		if(stack->value < min)
+		if (stack->value < min)
 			min = stack->value;
 		stack = stack->next;
 	}
@@ -41,12 +41,12 @@ int	find_min(t_list *stack)
 
 int	find_max(t_list *stack)
 {
-	int max;
+	int	max;
 
 	max = stack->value;
-	while(stack)
+	while (stack)
 	{
-		if(stack->value > max)
+		if (stack->value > max)
 			max = stack->value;
 		stack = stack->next;
 	}
@@ -60,7 +60,7 @@ int	find_position(t_list *stack, int index)
 	if (!stack)
 		return (-1);
 	i = 0;
-	while(stack)
+	while (stack)
 	{
 		if (stack->index == index)
 			return (i);
